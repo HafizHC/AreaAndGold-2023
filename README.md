@@ -1,8 +1,8 @@
-# AreaAndGolds
+# AreaAndGolds-2023
 
-Alandan kaçış oyununu oynamak için: https://hafizhc.github.io/AreaAndGolds/Area.html
+Alandan kaçış oyununu oynamak için: https://hafizhc.github.io/AreaAndGolds-2023/Area.html
 
-Altın toplama oyununu oynamak için: https://hafizhc.github.io/AreaAndGolds/Golds.html
+Altın toplama oyununu oynamak için: https://hafizhc.github.io/AreaAndGolds-2023/Golds.html
 
 Kontroller:
 
