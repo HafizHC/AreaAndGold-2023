@@ -9,6 +9,5 @@ Kontroller:
 W, A, S ve D tuşları soldaki oyuncuyu; ileri, geri, sağ ve sol ok tuşarı ise sağdaki okuncuyu haraket ettirir. 
 Space tuşu ile soldaki oyuncu, enter tuşu ile sağdaki oyuncu ateş eder.
 
-
-Oluşturma tarihi: 2021
+Alandan kaçarken altın toplarsan canın artar ve mermilerin güçlenir.
 
