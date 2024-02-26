@@ -78,11 +78,20 @@ function update() {
 
 	for(let m = 0; m < bullets.length; m++){
 		bullets[m].update();
-		if (collsion(bullets[m].x + bullets[m].vx, bullets[m].y + bullets[m].vy, bullets[m].w, bullets[m].h)) bullets[m].cllsn = true;
+		if (collsion(bullets[m].x + bullets[m].vx, bullets[m].y + bullets[m].vy, bullets[m].w, bullets[m].h))
+			if(!bullets[m].bLvl) bullets[m].cllsn = true;
+			else{
+				let l = findLocation(bullets[m].x + bullets[m].vx, bullets[m].y + bullets[m].vy, bullets[m].w, bullets[m].h);
+				map[l.pUnity][l.pUnitx] = 0;
+				map[l.pUnity][l.pUnitx1] = 0;
+				map[l.pUnity1][l.pUnitx] = 0;
+				map[l.pUnity1][l.pUnitx1] = 0;
+
+			} 
 		for(let n = 0; n < players.length; n++){
 			if(bullets[m].id == players[n].id || !players[n].alive || bullets[m].cllsn) continue;
 			if(collsion1(players[n], bullets[m])){
-				gameMode == 'Golds' ? null:players[n].shot(20 + bullets[m].lvl*8);
+				players[n].shot(20 + bullets[m].lvl*8);
 				bullets[m].cllsn = true;
 			}
 		}

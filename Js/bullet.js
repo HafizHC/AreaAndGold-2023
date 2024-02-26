@@ -1,6 +1,6 @@
 class bullet {
 
-	constructor(x,y,sin,cos,lvl,id){
+	constructor(x,y,sin,cos,lvl,bLvl,id){
 
 		this.w = 7;
 		this.h = 7;
@@ -11,6 +11,7 @@ class bullet {
 		this.vy = sin*speed;
 
 		this.lvl = lvl;
+		this.bLvl = bLvl;
 		this.cllsn = false;
 		this.id = id;
 	}
