@@ -181,6 +181,7 @@ function goldGame(){
 			players[i].y = y*unitWh;
 			players[i].alive = true;
 			players[i].health = 100;
+			players[i].score = 0;
 		}
 		if(players[i].score >= 5){
 			drawText("Winner " + players[i].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40,"center");
